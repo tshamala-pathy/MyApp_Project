@@ -1,0 +1,85 @@
+/* Portfolio/static/Portfolio/about_me.css */
+
+/* Body and Container Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.btn {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    size: smal;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Head Styles */
+head {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.title {
+    background-color: darkgreen;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Navbar Styles (if you have a navigation bar in the head) */
+.navbar {
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+.profile-photo {
+    max-width: 50px;
+    max-height: 50px; 
+}
+
+

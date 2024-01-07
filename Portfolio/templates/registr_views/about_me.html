@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'Portfolio/about_me.css' %}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="mb-4">About Me</h1>
+        {% for about_me_item in about_me_list %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">{{ about_me_item.first_name }} {{ about_me_item.last_name }}</h5>
+                    <p class="card-text">{{ about_me_item.bio }}</p>
+                    <p class="card-text">Email: {{ about_me_item.email }}</p>
+                    <p class="card-text">Phone: {{ about_me_item.phone }}</p>
+
+                    {% if about_me_item.linkedin_url %}
+                        <p class="card-text">LinkedIn: <a href="{{ about_me_item.linkedin_url }}" target="_blank" class="btn btn-primary">LinkedIn</a></p>
+                    {% endif %}
+
+                    {% if about_me_item.github_url %}
+                        <p class="card-text">GitHub: <a href="{{ about_me_item.github_url }}" target="_blank" class="btn btn-dark">GitHub</a></p>
+                    {% endif %}
+
+                    {% if about_me_item.facebook_url %}
+                        <p class="card-text">Facebook: <a href="{{ about_me_item.facebook_url }}" target="_blank" class="btn btn-info">Facebook</a></p>
+                    {% endif %}
+
+                    {% if about_me_item.profile_photo %}
+                        <p class="card-text">Profile Photo: <img src="{{ about_me_item.profile_photo.url }}" alt="Profile Photo" class="img-fluid"></p>
+                    {% endif %}
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Add Bootstrap JS (optional, if needed) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UoUd1Mf5eOVq6sIa6BWrRjBq4fJlf2x4XpNECJScfOK6cZgTbuk9adJQpOACGiN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgydCEuA6L/gj0if8qQ6qBcW6PMJZn4/PMz5F5P1paFByWHYbF8M1A4ZB2" crossorigin="anonymous"></script>
+</body>
+</html>

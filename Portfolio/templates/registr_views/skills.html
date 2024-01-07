@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills</title>
+</head>
+<body>
+    <h1>Skills</h1>
+    {% for skill in skills_list %}
+        <h3>{{ skill.name }}</h3>
+        {{ skill.description }}
+    {% endfor %}
+</body>
+</html>

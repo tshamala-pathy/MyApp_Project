@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experience</title>
+</head>
+<body>
+    <h1>Experience</h1>
+    {% for experience in experience_list %}
+        <h3>{{ experience.title }}</h3>
+        <p>{{ experience.company }} ({{ experience.start_date }} - {{ experience.end_date }})</p>
+        <p>{{ experience.description }}</p>
+    {% endfor %}
+</body>
+</html>
