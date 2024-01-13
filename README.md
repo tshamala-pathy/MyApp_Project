@@ -72,7 +72,7 @@ Share knowledge on a specific subject. Find tutorials, quizzes, and learning res
 
 ## Author 👩‍💻
 
-[Your Name]
+Tshamala Pathy
 
 ## License 📄
 
