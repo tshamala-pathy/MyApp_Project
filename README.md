@@ -59,13 +59,13 @@ Share knowledge on a specific subject. Find tutorials, quizzes, and learning res
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/tshamala-pathy/MyApp_Project.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd your-repo
+    cd MyApp
     ```
 
 3. Explore the various sections and features by opening the corresponding files or directories.
